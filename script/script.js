@@ -1,10 +1,10 @@
 
 let wordslist = [
-    "Fleurs",
+/*     "Fleurs",
     "Truc",
     "Martien",
-    "Bruyant",
-    "Millionnaire",
+ */    "Bruyant",
+/*     "Millionnaire",
     "Comique",
     "Fantaisie",
     "Message",
@@ -27,7 +27,9 @@ let wordslist = [
     "mois",
     "radio",
     "parcourir",
-];
+    "care",
+    "point",
+ */];
 let mot ="";
 let trying = 0;
 let maxtry = 6;
@@ -35,35 +37,63 @@ let deviner = [];
 let bonMot;
 
 function randomWord() {
-   return mot = wordslist[Math.floor(Math.random()*wordslist.length)];
+   mot = wordslist[Math.floor(Math.random()*wordslist.length)];
 }
 function letterButton(){
     let boutton = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(lettre =>
-        `<button class ="lettre" id ="` + lettre + `">`+ lettre +`</button>`
+        `<button class ="lettre" id ="` + lettre + `"onClick="verif('`+ lettre +`')">`+ lettre +`</button>`
     ).join("");
         document.getElementById('buttonLetter').innerHTML = boutton;
-}
-function verif(choix){
-    if (mot.indexOf(choix) >= 0){
-        
-    } else if(mot.indexOf(choix) === -1) {
+};
+function verif(choice){
+
+    deviner.indexOf(choice) === -1 ? deviner.push(choice) : null;
+    document.getElementById(choice).setAttribute('disabled', true);
+
+    if (mot.indexOf(choice) >= 0){
+
+        status();
+        checkWin();
+        document.getElementById(choice).style.backgroundColor = "green";
+
+    } 
+    else if(mot.indexOf(choice) === -1) {
         trying ++;
-        pendu()
-    }
+        fail();
+        pendu();
+        checkLose();
+        document.getElementById(choice).style.backgroundColor = "red";
+
+    };
+};
+function status(){
+
+    bonMot = mot.split('').map(lettre => (deviner.indexOf(lettre) >=0 ? lettre :" _ ")).join('');
+    document.getElementById('goodWord').innerHTML = bonMot;
+
 };
 function fail(){
-
-}
+    document.getElementById('numberFail').innerHTML = trying;
+};
 function pendu() {
     document.getElementById('pendu').src = 'assets/pendu ' + trying + '.png';
-  }
-function checkWin(){
 
-}
+};
+function checkWin(){
+    if (status === mot){ 
+        document.getElementById("buttonLetter").innerHTML = "You Win!!!"  
+    };
+};
 function checkLose(){
-    
-}
-console.log(randomWord());
-letterButton();
+    if (trying === maxtry){ 
+        document.getElementById("buttonLetter").innerHTML = "Game Over"
+        document.getElementById('goodWord').innerHTML = 'The answer was: ' + mot;
+  
+    };
+};
+randomWord();
+status();
 pendu();
+letterButton();
+
 
