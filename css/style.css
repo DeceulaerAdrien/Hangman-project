@@ -1,0 +1,26 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.pendu {
+  width: 20%;
+  height: 20%;
+}
+
+.lettre {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  color: white;
+  background-color: #383232;
+  font-weight: bold;
+  font-family: monospace;
+}
+/*# sourceMappingURL=style.css.map */

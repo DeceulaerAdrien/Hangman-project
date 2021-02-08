@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.pendu{
+    
+    width: 20%;
+    height: 20%;
+}
+.lettre{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: white;
+    background-color: rgb(56, 50, 50);
+    font-weight: bold;
+    font-family: monospace;
+}
