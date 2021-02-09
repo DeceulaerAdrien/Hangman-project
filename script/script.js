@@ -1,4 +1,3 @@
-
 let wordslist = [
     "fleurs",
     "truc",
