@@ -20,7 +20,7 @@ JuniorDevelopper in formation for Becode.
 
 ## What does it look like ? :
 
-![](a venir)
+![](https://github.com/DeceulaerAdrien/Hangman-project/blob/development/assets/capture%202.png?raw=true)
 
 ## Progression… :
 
