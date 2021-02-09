@@ -1,6 +1,6 @@
 # Hangman-project
 
-![](https://raw.githubusercontent.com/DeceulaerAdrien/Hangman-project/development/assets/pendu%206.png)
+![](https://github.com/DeceulaerAdrien/Hangman-project/blob/development/assets/capture%203.png?raw=true)
 
 ## Who made the project :
 
