@@ -1,6 +1,13 @@
-.pendu{
-    
-    width: 20%;
+body{
+    text-align: center;
+}
+header{
+    h1{
+        margin: 0.2%;
+    }
+}
+.pendu{    
+    width: 35%;
     height: 20%;
 }
 .lettre{
@@ -11,4 +18,15 @@
     background-color: rgb(110, 93, 93);
     font-weight: bold;
     font-family: monospace;
+}
+.reset{
+    width: 150px;
+    height: 50px;
+    background-color: red;
+}
+@media(min-width: 900px){
+    .pendu{
+        width: 20%;
+        height: 20%;
+    }
 }

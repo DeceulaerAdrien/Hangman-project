@@ -12,14 +12,15 @@
         <h1>Hangman</h1>
     </header>
     <main>
-        <div class="fail" id="fail">Fail:<span id="numberFail">0 </span>of 6</div>
+        <div class="fail" id="fail">Fail:<span id="numberFail">0 </span> of 6</div>
         <img src="assets/pendu 1.png" alt="" class="pendu" id="pendu">
         <p>Guess the good word</p>
         <p id=goodWord>here</p>
         <div class="buttonLetter" id="buttonLetter"></div>
-        <div class="reset" id="reset"></div>
     </main>
-    <footer></footer>
+    <footer>
+        <button class="reset" id="reset" onclick="reset()">Reset</button>
+    </footer>
     <script src="script/script.js"></script>
 </body>
 </html>

@@ -65,6 +65,7 @@ function verif(choice){
         status();
         checkWin();
         document.getElementById(choice).style.backgroundColor = "green";
+        console.log(deviner)
 
     } 
     else if(result.indexOf(choice) === -1) {
@@ -73,6 +74,7 @@ function verif(choice){
         pendu();
         checkLose();
         document.getElementById(choice).style.backgroundColor = "red";
+        console.log(deviner)
 
     };
 };
@@ -80,6 +82,7 @@ function status(){
 
     bonMot = result.split('').map(lettre => (deviner.indexOf(lettre) >=0 ? lettre :" _ ")).join('');
     document.getElementById('goodWord').innerHTML = bonMot;
+    
 };
 function fail(){
     document.getElementById('numberFail').innerHTML = trying;
@@ -99,9 +102,21 @@ function checkLose(){
   
     };
 };
+function reset(){
+
+    trying = 0;
+    deviner = [];
+    document.getElementById('pendu').src = 'assets/pendu 0.png';
+  
+    randomWord();
+    status();
+    fail();
+    letterButton();
+
+}
 randomWord();
 status();
 pendu();
 letterButton();
-
+console.log(deviner)
 

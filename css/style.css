@@ -1,5 +1,13 @@
+body {
+  text-align: center;
+}
+
+header h1 {
+  margin: 0.2%;
+}
+
 .pendu {
-  width: 20%;
+  width: 35%;
   height: 20%;
 }
 
@@ -11,5 +19,18 @@
   background-color: #6e5d5d;
   font-weight: bold;
   font-family: monospace;
+}
+
+.reset {
+  width: 150px;
+  height: 50px;
+  background-color: red;
+}
+
+@media (min-width: 900px) {
+  .pendu {
+    width: 20%;
+    height: 20%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
