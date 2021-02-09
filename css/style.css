@@ -1,36 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
 body {
   text-align: center;
+  font-family: 'Pangolin', cursive;
+  color: white;
+  background-image: url(../assets/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-concrete_light.jpg);
 }
 
-header h1 {
-  margin: 0.2%;
-}
-
-.pendu {
+img {
   width: 35%;
-  height: 20%;
+  height: 25%;
 }
 
 .lettre {
+  font-family: 'Pangolin', cursive;
   width: 50px;
   height: 50px;
-  margin: 5px;
+  border-radius: 5px;
+  border: 3px dotted white;
+  font-size: large;
   color: white;
-  background-color: #6e5d5d;
-  font-weight: bold;
-  font-family: monospace;
+  background-color: transparent;
+  margin-right: 5px;
+  margin-top: 3%;
+}
+
+.lettre :hover {
+  color: black;
+  background-color: white;
 }
 
 .reset {
-  width: 150px;
-  height: 50px;
-  background-color: red;
+  font-family: 'Pangolin', cursive;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px dotted white;
+  background-color: transparent;
+  margin-top: 3%;
 }
 
-@media (min-width: 900px) {
-  .pendu {
-    width: 20%;
-    height: 20%;
+@media (min-width: 750px) {
+  img {
+    width: 25%;
+    height: 25%;
   }
 }
 /*# sourceMappingURL=style.css.map */

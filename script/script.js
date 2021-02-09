@@ -38,6 +38,9 @@ let wordslist = [
     "democratie",
     "heure",
     "debutant",
+    "melon",
+    "malin",
+    "pourcent",
 ];
 
 let result ="";
@@ -88,7 +91,7 @@ function fail(){
     document.getElementById('numberFail').innerHTML = trying;
 };
 function pendu() {
-    document.getElementById('pendu').src = 'assets/pendu ' + trying + '.png';
+    document.getElementById('pendu').src = 'assets/pendu tableau ' + trying + '.png';
 };
 function checkWin(){
     if (bonMot === result){ 
@@ -96,6 +99,7 @@ function checkWin(){
     };
 };
 function checkLose(){
+    
     if (trying === maxtry){ 
         document.getElementById("buttonLetter").innerHTML = "Game Over"
         document.getElementById('goodWord').innerHTML = 'The answer was: ' + result;
@@ -106,7 +110,7 @@ function reset(){
 
     trying = 0;
     deviner = [];
-    document.getElementById('pendu').src = 'assets/pendu 0.png';
+    document.getElementById('pendu').src = 'assets/pendu tableau 0.png';
   
     randomWord();
     status();
@@ -118,5 +122,4 @@ randomWord();
 status();
 pendu();
 letterButton();
-console.log(deviner)
 
