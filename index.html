@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- titre -->
+    <title>Hangman Adrien-Deceulaer</title>
+</head>
+<body>
+    <header>
+        <h1>Hangman</h1>
+    </header>
+    <main>
+        <div class="fail" id="fail">Fail:<span id="numberFail">0 </span> of 6</div>
+        <img class="pendu" id= "pendu" src="/assets/pendu tableau 0.png"></div>
+        <h3>Guess the good word</h3>
+        <p id=goodWord>here</p>
+        <div class="buttonLetter" id="buttonLetter"></div>
+    </main>
+    <footer>
+        <button class="reset" id="reset" onclick="reset()">Reset</button>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
