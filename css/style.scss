@@ -21,10 +21,6 @@ img{
     background-color: transparent;
     margin-right: 5px;
     margin-top: 3%;
-    :hover{
-        color: black;
-        background-color: white;
-    }
 }
 .reset{
     font-family: 'Pangolin', cursive;
@@ -40,5 +36,9 @@ img{
     img{
         width: 25%;
         height: 25%;
-    }    
+    }
+    .reset{
+        margin-top: 1%;
+        width: 10%;
+    }
 }
